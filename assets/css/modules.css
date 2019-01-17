@@ -1,0 +1,352 @@
+/* ----------------------------
+banner
+---------------------------- */
+
+.row--banner{
+	background-color: #626e6d;
+	background-image: url(../img/banner-small.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;   
+}
+
+@media (min-width: 38em){
+	.row--banner{background-image: url(../img/banner.jpg);}
+}
+/* ----------------------------
+header
+---------------------------- */
+
+.header{
+	padding: 1.25em 1em;
+	/*20px/16px - 16px/16px*/
+}
+.header_logo{
+	float: left;
+	padding-top: .2em; 
+}
+.header_nav{
+	float: right;
+	width: 150px;
+}
+.header_nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+.header_nav li{
+	display: inline-block;
+	margin: 0;
+}
+.header_nav a{
+	display: block;
+	margin-right: .2em;
+	padding: 0.6em 1em 0.4em;
+	border-radius: .3em;
+	color: #fff;
+	background: none;
+	font-size: 0.8125em;
+	/* 13px/16px */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header_nav-contact a  {margin-right: 0;}
+
+.current a{
+	color: #fff;
+	background: #56b880;
+}
+
+.header_nav a:focus {background: #000;}
+.header_nav a:hover {background: #3bb2d0;}
+.header_nav a:active {background: #af0000;}
+
+@media (min-width: 38em){
+	.header{
+		padding: 2.2222em 2em;
+		/*40px/18px - 36px/18px*/
+	}
+	.header_nav{width: 12em;}
+
+	.header_nav a{
+		font-size:0.8333em;
+		/* 15px/18px */ 
+	}		
+}
+
+/* ----------------------------
+banner-content
+---------------------------- */
+
+.banner-content{
+	padding: 1.875em 1.5em 2.8125em;
+	/* 30/16px  - 24px/16px - 45px/16px */
+	text-align: center;
+}
+
+.banner-content_heading{
+	margin: 0 0 1.875em;
+	/* 30px/24px */
+	color: #fff;
+	font-size: 1.5em;
+	/* 24px/16px */
+	font-weight: normal;
+}
+
+@media(min-width: 38em){
+	.banner-content{
+		padding: 7.5em 2em;
+		/* 135/18px  - 36px/18px */
+	
+	}
+
+.banner-content_heading{
+		font-size: 2.5556em;
+		/* 46px/18px */
+
+	}
+}
+
+/* ----------------------------
+features
+---------------------------- */
+
+.features{text-align: center;}
+
+.features_row{
+	margin-bottom: 2.185em;
+	/*35px/16px*/
+}
+
+.features_heading{
+	margin: 0 0 .75em;
+	/* 12px/16px */
+	font-size: 1.125em;
+	/* 18px/16px */
+}
+.features_text {margin: 0;}
+
+.features_bike{
+	height: 90px;
+	background: url(../img/icon-bike.png) no-repeat center;
+	background-size: contain; 
+}
+.features_phone{
+	height: 149px;
+	background: url(../img/icon-phone.png) no-repeat center;
+	background-size: contain; 
+}
+.features_safe{
+	height: 80px;
+	background: url(../img/icon-safe.png) no-repeat center;
+	background-size: contain; 
+}
+
+@media (min-width: 38em){
+	.features{text-align: left;}
+
+	.features_row{
+		margin-bottom: 4.1667em;
+		/*75px/18px*/
+	}
+	.features_row:last-child { margin:0; }
+
+	.features_padding{
+		padding-top: 4em;
+		/* 72px/18px */
+	}
+
+	.features_heading{
+		font-size: 1.556em;
+		/* 75px/18px */
+		font-weight: normal;
+	}
+}
+
+@media (min-width: 50em){
+	.features_bike{height: 154px;}
+	.features_phone{height: 296px;}
+	.features_safe{height: 141px;}
+} 
+
+/* ----------------------------
+testimonials
+---------------------------- */
+.testimonials {text-align: center;}
+
+.testimonials_heading{
+	margin: 0 0 1.905em;
+	/* 25px/16px */
+	font-size: 1.3125em;
+	/* 21px/16px */
+}
+
+.testimonials_quote{
+	margin-top: 1.5625em;
+	/* 25px/16px */
+}
+
+.testimonials_source { margin: 0 }
+
+@media(min-width: 38em){
+	.testimonials_heading{
+		margin-bottom: 1.3225em;
+		/* 45px/34px */
+		font-size: 1.8889em;
+		/* 34px/16px */
+		font-weight: normal;
+	}
+
+	.testimonials_quote{
+		font-size: 1.3333em;
+		/* 24px/18px */
+	}
+
+	.testimonials_source { 
+		font-size: 1.1111em;
+		/* 20px/18px */ 
+	}
+}
+
+/* ----------------------------
+facts
+---------------------------- */
+
+.facts{text-align: center;}
+
+.facts-intro_heading{
+	margin: 0 0 .3em;
+	font-size: 1.5625em;
+	/* 25px/16px */
+}
+
+.facts-intro_text{
+	margin: 0 0 2em;
+	/* 32px/16px */
+}
+
+.facts-list_heading{
+	margin: 0 0 .25em;
+	/* 4px/16px */
+	font-size: 1.5em;
+	/* 24px/16px */
+	font-weight: bold;
+}
+
+.facts-list_text{margin: 0;}
+
+.facts-list_icons{
+	display: block;
+	width: 70px;
+	height: 44px;
+	margin: 0 auto 1.3333em;
+	/* 24px/16px */
+	background-repeat: no-repeat;
+	background-image: url(../img/icon-sprite.png); 
+}
+
+.facts-list_id {background-position: 0 0;}
+.facts-list_eye {background-position: 0 -44px;}
+.facts-list_timer {background-position: 0 -88px;}
+.facts-list_chart {background-position: 0 -132px;}
+
+
+@media (min-width: 45em;){
+	.facts-intro_heading{
+		font-size: 1.8889em;
+		/* 34px/18px */
+		font-weight: normal;
+	}
+
+	.facts-intro_text{
+		margin: 0 0 2.5em;
+		/* 50px/20px */
+		font-size: 1.1111em;
+		/* 20px/18px */
+	}
+
+	.facts-list_heading{
+		font-size: 1.5556em;
+		/* 28px/18px */
+	}	
+
+}
+
+/* ----------------------------
+press
+---------------------------- */
+
+.press {text-align: center;}
+
+.press_heading{
+	margin-bottom: 1em;
+	/* 25px/25px */
+	color: #fff;
+	font-size: 1.5625em;
+	/* 25px/16px */
+}
+
+.press_logos {margin-bottom: 2em;}
+.press_logos--bevel {margin-bottom: 0;}
+
+@media (min-width: 38em){
+
+	.press_heading{
+		font-size: 1.8889em;
+		/* 34px/18px */
+		font-weight: normal;
+	}
+
+	.press_logos {
+		float: left;
+		margin: 0 7.2% 0 0;
+	}
+
+	.press_logos--solvable{width: 17.88%;}
+	.press_logos--nc{width: 8.65%;}
+	.press_logos--waratah{width: 32.78%;}
+	.press_logos--bevel{
+		width: 18.84%;
+		margin: 0;
+	}
+
+}
+
+/* ----------------------------
+footer
+---------------------------- */
+
+.footer_info{color:#777;}
+
+.footer_info ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer_info a:link,
+.footer_info a:visited{
+	color:#777;
+	text-decoration: none;
+}
+
+.footer_info a:focus,
+.footer_info a:hover,
+.footer_info a:active {border-bottom: .15em solid;}
+
+.footer_info a:focus{color: #fff;}
+.footer_info a:hover{color: #3bb2d0;}
+.footer_info a:active{color: #56b880;}
+
+.footer_logo{ margin: 0 0 2em; }
+.footer_copyright {margin: 1em 0 0;}
+.footer_copyright li {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+@media(min-width: 38em){
+	.footer_cta{text-align: right;}
+}
